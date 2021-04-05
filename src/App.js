@@ -15,7 +15,7 @@ function App() {
 
   useEffect(() => {
     auth.onAuthStateChanged(userAuth => {
-      if (userAuth) {
+      if(userAuth) {
         //user is logged in
         dispatch(
           login({
@@ -23,7 +23,7 @@ function App() {
             uid: userAuth.uid,
             displayName: userAuth.displayName,
             photoUrl: userAuth.photoURL,
-          }));
+        }));
       }
 
       else {
@@ -35,13 +35,14 @@ function App() {
   return (
     //BEM
     <div className="app">
+      {/**Header */}
+      <Header />
+
       {!user ? (
         <Login />
       ) : (
         //App body
         <div className="app__body">
-          {/**Header */}
-          < Header />
           {/**Sidebar */}
           <Sidebar />
 
