@@ -1,0 +1,51 @@
+/*create the posts feed look*/
+.post {
+  background-color: white;
+  padding: 15px;
+  margin-bottom: 10px;
+  border-radius: 10px;
+}
+
+/*give the header a flex row for the avatar and name, & description
+give 10px margin to the bottom*/
+.post__header {
+  display: flex;
+  margin-bottom: 10px;
+}
+
+/*give 10 margin to the left for the info of the user which
+is name, description*/
+.post__info {
+  margin-left: 10px;
+}
+
+/*target the p tag in the post__info*/
+.post__info > p {
+}
+
+/*give some wrap if the message overflows*/
+.post__body {
+  overflow-wrap: anywhere;
+}
+
+/*resize the name of user*/
+.post__info > h2 {
+  font-size: 15px;
+}
+
+/*flex on the post buttons in a row and space it evenly*/
+.post__buttons {
+  display: flex;
+  justify-content: space-evenly;
+}
+
+.post__description {
+  display: flex;
+  font-size: 12px;
+  color: gray;
+}
+
+.centerDot {
+  margin-left: 4px;
+  margin-right: 4px;
+}

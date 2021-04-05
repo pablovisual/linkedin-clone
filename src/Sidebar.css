@@ -1,0 +1,119 @@
+.sidebar {
+  position: sticky;
+  top: 80px;
+  flex: 0.2; /*take 20% of the screen on the left*/
+  border-radius: 10px;
+  text-align: center;
+  height: fit-content;
+}
+
+.sidebar__avatar {
+    margin-bottom: 10px;
+}
+
+/*this gives the div with the background pic, avatar with name, 
+email, the nice linkedin look but it only goes down to the border bottom*/
+.sidebar__top {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  border: 1px solid lightgray;
+  border-bottom: 0;
+  border-top-left-radius: 10px;
+  border-top-right-radius: 10px;
+  background-color: white;
+  padding-bottom: 10px;   
+}
+
+.sidebar__top > h4 {
+    color: gray;
+    font-size: 12px;
+}
+
+/*resize the user profile name*/
+.sidebar__top > h2 {
+    font-size: 10px;
+}
+
+/*insert the background img behind the avatar*/
+.sidebar__top > img {
+  margin-bottom: -20px;
+  width: 100%;
+  height: 60px;
+  border-top-left-radius: 10px; /*the top-left and top-right are repeated here to make-*/
+  border-top-right-radius: 10px; /*the img fill in the corners of the curved box*/
+}
+
+/*this gives the div after the email with the border bottom the rest
+of the sidebar look that has the viewed stats*/
+.sidebar__stats {
+    padding: 10px;
+    margin-bottom: 10px;
+    background-color: white;
+    border: 1px solid lightgray;
+    border-bottom-left-radius: 10px;
+    border-bottom-right-radius: 10px;
+}
+
+/*gives flex on the stats section with space btw for the viewed section and the stats numbers*/
+.sidebar__stat {
+  margin-top: 10px;
+  display: flex;
+  justify-content: space-between;
+}
+
+
+/*this makes the p tags color gray of the sidebar__stats section*/
+.sidebar__stat > p {
+  color: gray;
+  font-size: 13px;
+  font-weight: 600;
+}
+
+/*the stats number of people who viewed you and how many views on your post
+to the color blue, same color as linkedin*/
+.sidebar__statNumber {
+  font-weight: bold;
+  color: #0a56c2 !important;
+}
+
+/*gives div sidebar bottom its own box look*/
+.sidebar__bottom {
+  text-align: left;
+  padding: 10px;
+  border: 1px solid lightgray;
+  background-color: white;
+  border-radius: 10px;
+  margin-top: 10px;
+}
+
+/*rezise the font and give some padding to the bottom*/
+.sidebar__bottom > p {
+  font-size: 13px;
+  padding-bottom: 10px;
+}
+
+/*from the function we created, topic creates a new div and use 
+sidebar__recentItem to add mods below the recent title*/
+.sidebar__recentItem {
+  display: flex;
+  font-size: 13px;
+  color: gray;
+  font-weight: bolder;
+  cursor: pointer;
+  margin-bottom: 5px;
+  padding: 5px;
+}
+
+/*add some hover affect*/
+.sidebar__recentItem:hover {
+  background-color: whitesmoke;
+  border-radius: 10px;
+  cursor: pointer;
+  color: black;
+}
+/*gives some margin btw the hash and the words*/
+.sidebar__hash {
+  margin-right: 10px;
+  margin-left: 5px;
+}

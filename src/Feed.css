@@ -1,0 +1,77 @@
+/*since this is the middle of web page it takes up
+60% of the screen*/
+.feed {
+  flex: 0.6;
+  margin: 0 20px;
+}
+
+/*gives the container a white box look for feed that people
+around the world post*/
+.feed__inputContainer {
+  background-color: white;
+  padding: 10px;
+  padding-bottom: 20px;
+  border-radius: 10px;
+  margin-bottom: 20px;
+}
+
+/*modify the form tag*/
+.feed__test {
+  display: flex;
+}
+
+.feed__avatar { /*this is for if there is an image in there photoUrl 
+  to resize the image to fit with the post input field 
+  and if there isnt then still fit with the post input field anyway*/
+  margin-right: 10px;
+  height: 47px !important;
+  width: 47px !important;
+}
+
+
+
+.feed__input {
+  display: flex;
+  border: 1px solid lightgray; /*gives a border all around for the form*/
+  border-radius: 30px; /*gives it that circular input text*/
+  padding: 10px;
+  color: gray;
+  padding-left: 15px;
+  margin-bottom: 10px;
+  flex: 1;
+  justify-content: space-evenly;
+  background-color: lightgray;
+}
+
+/*adds flex inside the form, plus modify the text field*/
+.feed__input > form {
+  display: flex;
+  width: 100%;
+  height: 25px;
+}
+
+/*mod the input inside the form and make the input
+field use up all space needed from the send button
+and remove the outline*/
+.feed__input > form > input {
+  border: none;
+  outline-width: 0;
+  flex: 1;
+  font-weight: 600;
+  width: 100%;
+  background-color: lightgray;
+}
+
+/*go into the feed__input the targets the form then the button
+to remove the send butto and the user just needs to enter to submit*/
+.feed__input > form > button {
+  display: none;
+}
+
+/*give flex box to the icons of photo, video, event
+write article, and puts space evenly to them*/
+.feed__inputOptions {
+  display: flex;
+  justify-content: space-evenly;
+}
+
